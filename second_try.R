@@ -1,4 +1,4 @@
-nvmax <- 6
+nvmax <- 8
 
 DT_subset <- dplyr::select(DT_train, c(  LotFrontage:Street # variables from lm_full
                             , LotShape:LandContour
