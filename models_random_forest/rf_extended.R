@@ -1,11 +1,5 @@
-library(randomForest)
-library(rpart)
-
-system("ls ../input")
-
-train <- read.csv("./dane/train(1).csv",stringsAsFactors=FALSE)
-test <- read.csv("./dane/test(1).csv",stringsAsFactors=FALSE)
-submission <- read.csv("./dane/sample_submission.csv",stringsAsFactors=FALSE)
+source('./models_random_forest/load_packages.R')
+source('./models_random_forest/rf_load_data.R')
 
 # Deal with missing values
 variables <- names(train)
